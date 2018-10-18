@@ -8,11 +8,11 @@
 export default {
   props: {
     cname: {
-      type:String,
+      type: String,
       default: "",
     },
     title: {
-      type:String,
+      type: String,
       default: "",
     }
   },
@@ -23,7 +23,7 @@ export default {
   },
 }
 </script>
-<style lang="sass">
+<style lang="scss">
 @import "../../css/element.scss"
 .btn {
   @inclue panel
