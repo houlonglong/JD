@@ -29,10 +29,10 @@
 	$height: 112px,
 	$textPadding: 0 32px,
 	$color: #333,
-	fontSize: 32px
+	$fontSize: 32px
 	) {
 	background: $bgcolor;
-	padding: #paddng;
+	padding: $paddng;
 	margin: $margin;
 	>h4 {
 		height: $height;
@@ -43,7 +43,6 @@
 		overflow: hidden;
 		text-align: center;
 		color: $color;
-		font-size: @fontSize;
+		font-size: $fontSize;
 	}
-
 }

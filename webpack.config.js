@@ -43,24 +43,24 @@ module.exports = (env = {}) => {
           test: /\.html$/,
           loader: 'html-loader'
         },
-        {
-          test: /\.vue$/,
-          loader: 'vue-loader',
-          options: {
-            cssModules: {
-              localIdentName: '[path][name]---[local]---[hash:base64:5]',
-              camelCase: true
-            },
-            extractCSS: true,
-            loaders: env.production?{
-              css: ExtractTextPlugin.extract({use: 'css-loader!px2rem-loader?remUnit=40&remPrecision=8', fallback: 'vue-style-loader'}),
-              scss: ExtractTextPlugin.extract({use: 'css-loader!px2rem-loader?remUnit=40&remPrecision=8!sass-loader', fallback: 'vue-style-loader'})
-            }:{
-              css: 'vue-style-loader!css-loader!px2rem-loader?remUnit=40&remPrecision=8',
-              scss: 'vue-style-loader!css-loader!px2rem-loader?remUnit=40&remPrecision=8!sass-loader'
+          {
+            test: /\.vue$/,
+            loader: 'vue-loader',
+            options: {
+              cssModules: {
+                localIdentName: '[path][name]---[local]---[hash:base64:5]',
+                camelCase: true
+              },
+              extractCSS: true,
+              loaders: env.production?{
+                css: ExtractTextPlugin.extract({use: 'css-loader!px2rem-loader?remUnit=40&remPrecision=8', fallback: 'vue-style-loader'}),
+                scss: ExtractTextPlugin.extract({use: 'css-loader!px2rem-loader?remUnit=40&remPrecision=8!sass-loader', fallback: 'vue-style-loader'})
+              }:{
+                css: 'vue-style-loader!css-loader!px2rem-loader?remUnit=40&remPrecision=8',
+                scss: 'vue-style-loader!css-loader!px2rem-loader?remUnit=40&remPrecision=8!sass-loader'
+              }
             }
-          }
-        },
+          },
         {
             test: /\.scss$/,
             loader: 'style-loader!css-loader!sass-loader'

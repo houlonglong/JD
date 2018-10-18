@@ -8,22 +8,7 @@
 </head>
 <body>
   <article id="app">
-    <a  class="api a">a.html</a>
-    <a  class="api b">b.html</a>
   </article>
-  <script>
-    document.querySelectorAll(".api").forEach(item => {
-      item.addEventListener("click", (e) => {
-        e.preventDefault();
-        const link = item.textContent;
-        history.pushState({a:22222222222}, "222", link)
-      },false)
-    });
-
-    window.addEventListener('popstate', (e) => {
-      console.log(e.state)
-      
-    })
   </script>
 </body>
 </html>
