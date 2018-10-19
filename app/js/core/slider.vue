@@ -1,7 +1,15 @@
 <template>
   <section :class="cname">
-    <swiper :options="options">
-      <swiper-slide></swiper-slide>
+    <swiper 
+    :options="options" :not-next-tick="options.notNextTick">
+      <swiper-slide 
+      v-for="item in items"
+      :key="item.id">
+        <router-link :to="{name: item.href }">
+          <img :src="item.src" alt="">
+        </router-link>
+      </swiper-slide>
+      <div class="swiper-pagination" v-if="options.pagination"></div> 
     </swiper>
   </section>
 </template>
@@ -22,6 +30,12 @@ export default {
           notNextTick: false  
         }
       }
+    },
+    items: {
+      type: Array,
+      default(){
+        return []
+      }
     }
   },
   comments: {
@@ -30,7 +44,7 @@ export default {
   }
 }
 </script>
-<style lang="css">
+<style lang="scss">
   @import "~swiper/dist/css/swiper.css";
 </style>
 
