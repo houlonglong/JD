@@ -24,9 +24,9 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "../../css/element.scss"
-.btn {
-  @inclue panel
+@import '../../css/element.scss';
+.panel{
+    @include panel;
 }
 </style>
 
