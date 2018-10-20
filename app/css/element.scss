@@ -1,21 +1,13 @@
 @import "./layout.scss";
 
-@mixin btn(
-	$size: 14px, 
-	$color: #FFF,
-	$bgcolor: #F04752,
-	$padding:5px,
-	$radius:5px
-	) {
-	padding: $padding;
-	background-color: $bgcolor;
-	border-radius: $radius;
-	border: 1px solid $bgcolor;
-	font-size: $size;
+@mixin btn($fontSize:24px,$color:#fff,$bgColor:#F04752,$height:56px,$radius:4px){
+	font-size: $fontSize;
 	color: $color;
-	text-align: center;;
-	line-height: 1;
-	display: inline-block;;
+	background-color:$bgColor;
+	height: $height;
+	line-height: $height;
+	border-radius:$radius;
+	text-align: center;
 }
 
 @mixin list($direction: column) {
