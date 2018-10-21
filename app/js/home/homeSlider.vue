@@ -60,6 +60,9 @@ export default {
 @import '../../css/element.scss';
 .slider {
   margin-top: 120px;
+  img {
+    width: 100%;
+  }
 }
 .list {
   @include list(row);
