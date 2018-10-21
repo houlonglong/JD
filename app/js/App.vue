@@ -11,4 +11,7 @@
 </script>
 
 <style style="scss">
+   #app {
+     background: #f5f5f5
+   }
 </style>
