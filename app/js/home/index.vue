@@ -2,8 +2,8 @@
   <div>
       <header-componen></header-componen>
       <home-slider></home-slider>
-      <novice>111111</novice>
-      
+      <novice></novice>
+       <Borrow/>
   </div>  
 </template>
 
@@ -11,16 +11,18 @@
 import HeaderComponen from '../public/header'
 import HomeSlider from './homeSlider'
 import Novice from './novice'
-console.log(Novice,111)
+import Borrow from './borrow'
+
 export default {
   components: {
     HeaderComponen,
     HomeSlider,
-    Novice
+    Novice,
+    Borrow
   }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../css/reset.css'
 </style>
 >
