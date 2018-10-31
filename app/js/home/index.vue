@@ -5,6 +5,7 @@
       <novice></novice>
       <Borrow/>
       <Money/>
+      <Product/>
   </div>  
 </template>
 
@@ -13,14 +14,16 @@ import HeaderComponen from '../public/header'
 import HomeSlider from './homeSlider'
 import Novice from './novice'
 import Borrow from './borrow'
- import Money from './money'
+import Money from './money'
+import Product from './product'
 export default {
   components: {
     HeaderComponen,
     HomeSlider,
     Novice,
     Borrow,
-    Money
+    Money,
+    Product
   }
 }
 </script>
