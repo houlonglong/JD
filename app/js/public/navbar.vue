@@ -14,19 +14,19 @@
         </router-link>
       </li>
       <li>
-        <router-link :to="{name:'home'}">
+        <router-link :to="{name:'ious'}">
           <img src="//img12.360buyimg.com/jrpmobile/jfs/t1/5291/40/14133/594/5bda5ca3E92d0e800/09ac81fa5a5c96ef.png?width=60&height=60" alt="">
           <p>白条</p>
         </router-link>
       </li>
       <li>
-        <router-link :to="{name:'home'}">
+        <router-link :to="{name:'raise'}">
           <img src="//img12.360buyimg.com/jrpmobile/jfs/t1/3358/38/14064/816/5bda5cabEcb7eca8b/9bb064f1cda7ceba.png?width=60&height=60" alt="">
           <p>众筹</p>
         </router-link>
       </li>
       <li>
-        <router-link :to="{name:'home'}">
+        <router-link :to="{name:'aa'}">
           <img src="//img12.360buyimg.com/jrpmobile/jfs/t1/7491/15/4277/926/5bda5cb9E421a0e60/89ee14ce9daf4aab.png?width=60&height=60" alt="">
           <p>我的</p>
         </router-link>
@@ -74,6 +74,7 @@ export default {
           color: #B1B4BB;
           font-size: 22px;
         }
+        
         &:nth-child(1){
           color: #508CEE
         }
@@ -82,4 +83,3 @@ export default {
     }
   }
 </style>
->

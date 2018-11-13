@@ -1,8 +1,9 @@
-import Vue from "vue";
+import Vue    from "vue";
 import Router from "vue-router";
-import Home from "../home/index.vue";
-import Money from "../money/index.vue";
-
+import Home   from "../home/index";
+import Money  from "../money/index";
+import Ious   from "../ious/index"
+import Raise  from "../raise/index"
 Vue.use(Router)
 
 export default new Router({
@@ -16,6 +17,21 @@ export default new Router({
       path: "/money",
       name: "money",
       component: Money
+    },
+    {
+      path: "/ious",
+      name: "ious",
+      component: Ious
+    },
+    {
+      path: "/raise",
+      name: "raise",
+      component: Raise
+    },
+    {
+      path: "/aaa",
+      name: "aa",
+      component: null
     }
   ]
 })
